@@ -1,0 +1,201 @@
+/* You can add custom CSS and extend Boostrap styles in this file.  Remember, Bootstrap is just CSS at the end of the day! */
+body {
+  margin: 0px;
+}
+section {
+  position: relative;
+  padding: 20px;
+}
+
+section#skills-section, section#contact-section{
+  background: #d4d4d4;
+}
+
+#mission-target,
+#skills-target,
+#contact-target,
+#inspiration-target {
+  position: relative;
+  top: -100px;
+}
+
+p{
+  font-family: 'Federo', sans-serif;
+  font-size: 110%;
+}
+
+/*-----------------------Begin styling of hero section-----------------------*/
+
+/*SIZZLE*/
+h1 {
+  font-family: 'Belleza', sans-serif;
+  color: black;
+}
+
+#hero-section {
+  width: 100vw;
+  height: 550px;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)), url("imgs/hero_img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-content h1{
+  color: white;
+  font-family: 'Krona One', sans-serif;
+}
+
+.hero-content {
+  color: white;
+  font-family: 'Krona One', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hero-content h1{
+  padding: 5px;
+}
+
+.hero-content img{
+  width: 21%;
+  height: auto;
+  margin: 20px auto;
+  padding: 0px;
+  border-radius: 50%;
+  border: solid black 2px;
+  transition-duration: 2s;
+}
+
+/*SIZZLE*/
+.hero-content img:hover{
+  transform: scale(1.2);
+  border: dashed black 2px;
+}
+/*End styling of hero section*/
+
+/*-----------------------Begin styling of navbar-----------------------*/
+i{
+  color: #ceccea;
+  font-size: 35px;
+}
+
+/*SIZZLE*/
+#icon-laptop{
+  transition-duration: 2s;
+}
+#icon-laptop:hover{
+  transform: rotate(360deg);
+}
+
+.nav-link, .navbar-brand{
+  color: #ceccea;
+}
+
+.nav-link:hover, .navbar-brand:hover{
+  color: #c88d8d;
+}
+
+.navbar-nav li{
+  margin-left: 15px;
+}
+
+#Home{
+  position: absolute;
+  left: 55px;
+  top: 20px;
+}
+/*End styling of navbar*/
+
+#inspiration-section,mission-section{
+  background: #fafafa;
+}
+/*-----------------------Begin Styling of Inspiration Section-----------------------*/
+
+/*SIZZLE made the prev and next icons black instead of white to stand out*/
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-item {
+  width: 70vw;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-item img {
+  object-fit: cover;
+  overflow: hidden;
+  height: 60vh;
+}
+
+
+.carousel-caption {
+  background: rgba(0,0,0,0.4);
+}
+
+/*-----------------------Begin Styling of Mission Section-----------------------*/
+#to_center_p, #to_center_img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*SIZZLE*/
+#mission-section-img{
+  border: solid black .5px;
+  transition-duration: .5s;
+}
+#mission-section-img:hover{
+  border: solid black .5px;
+  transform: scale(.95);
+}
+/*End Styling of mission section*/
+
+/*-----------------------Begin Styling of Skills Section-----------------------*/
+
+#skills-section img{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  width: 50%;
+  border-radius: 50%;
+  padding: 0;
+  border: solid black 3px;
+  margin-bottom: 10px;
+}
+
+#skills-section p{
+  position: relative;
+  bottom: 0px;
+}
+
+/*SIZZLE - change border with shadow upon hover*/
+#skills-section img:hover{
+  border: solid #8f4d8f 7px;
+  box-shadow: 10px 5px 5px rgba(0,0,0,.3);
+}
+#skills-section .skill{
+  padding: 20px;
+}
+
+/*End of Styling of Skills Section*/
+
+/*-----------------------Begin Styling of Contact Section-----------------------*/
+
+#contact-section i{
+  font-size: 375%;
+}
+
+/*End of Styling of Contact Section*/
+
+
