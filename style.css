@@ -7,7 +7,7 @@ section {
   padding: 20px;
 }
 
-section#skills-section, section#contact-section{
+section#skills-section, section#inspiration-section{
   background: #d4d4d4;
 }
 
@@ -189,6 +189,36 @@ i{
 }
 
 /*End of Styling of Skills Section*/
+
+/*-----------------------Begin Styling of Projects Section-----------------------*/
+
+#projects-section img{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40%;
+  width: 50%;
+  border-radius: 2%;
+  padding: 0;
+  border: solid black 3px;
+  margin-bottom: 10px;
+}
+
+#projects-section p{
+  position: relative;
+  bottom: 0px;
+}
+
+/*SIZZLE - change border with shadow upon hover*/
+#projects-section img:hover{
+  border: solid #8f4d8f 7px;
+  box-shadow: 10px 5px 5px rgba(0,0,0,.3);
+}
+#projects-section .skill{
+  padding: 20px;
+}
+
+/*End of Styling of Projects Section*/
 
 /*-----------------------Begin Styling of Contact Section-----------------------*/
 
