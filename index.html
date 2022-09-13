@@ -3,16 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">  
-    <!-- TODO: Replace this with your title -->
-    <title>Vraj's Portfolio</title>  
+    <title>Vraj Patel</title>  
     <!-- 
-			TODO: Add Bootstrap CSS link tag from: 
+			Add Bootstrap CSS link tag from: 
     	https://getbootstrap.com/docs/5.1/getting-started/introduction
 		-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- 
-			TODO: Add Bootstrap Icons link tag from: 
+			Add Bootstrap Icons link tag from: 
 			https://icons.getbootstrap.com/
 			(Remember, the CDN link is towards the bottom of the page!)
 		-->
@@ -27,7 +26,7 @@
 
   <body>
 
-  <!-- TODO: Paste Navbar code and customize links -->
+  <!-- Paste Navbar code and customize links -->
     <nav class="navbar navbar-expand-lg fixed-top" style="background: rgb(65, 84, 101)">
     <div class="container-fluid">
       <a id="icon-laptop" class="navbar-brand" href="#"><i class="bi bi-laptop"></i></a>
@@ -42,6 +41,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#skills-target">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#projects-target">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#inspiration-target">Inspiration</a>
@@ -76,7 +78,7 @@
         </div>
         <div class="col-md-6">
           <div id="to_center_p" class="text-center">
-            <p>My mission as an a computer science student is to expand and build upon my technical skill set to become a valuable asset for companies in the marketplace. With a passion in programming and learning new technologies, I love opportunities to try something new, and master it. The satisfaction I feel after completing projects makes the tedious process worth it. In the future, I hope to become a top-notch software engineer so that I can help life-changing software come to life for millions of people. I have a knack for details, which helps me write concise, effective, and readable code. I hope to apply my knowledge of data structures and algorithms to the code that I write to ensure efficiency of my program solutions.</p>
+            <p>My mission as an a computer science student at the University of South Florida is to expand and build upon my technical skill set to become a valuable asset for companies in the marketplace. With a passion in programming and learning new technologies, I love opportunities to try something new, and master it. The satisfaction I feel after completing projects makes the tedious process worth it. In the future, I hope to become a top-notch software engineer so that I can help life-changing software come to life for millions of people. I have a knack for details, which helps me write concise, effective, and readable code. I hope to apply my knowledge of data structures and algorithms to the code that I write to ensure efficiency of my program solutions.</p>
           </div>
          </div> 
         </div>
@@ -104,6 +106,35 @@
         <div class="skill col-lg-3 col-md-6 col-12">
           <img src="imgs/skills/CSSlogo.png" alt="Python Logo">
           <p class="text-center">CSS is a skill that I gained through the same summer internship in my freshman year of college, and I have used my knowledge of CSS to customize awesome-looking, responsive websites.</p>
+        </div>
+      </div>
+    </div>
+	</section>
+  <!-- Projects section -->
+  <section id="projects-section">
+    <div id="projects-target"></div>
+    <div class="container">
+      <h1 class="text-center col-12">Some of My Projects</h1>
+      <div class="row">
+        <div class="skill col-lg-3 col-md-6 col-12">
+          <a href="https://matchgame.vrajatreplit.repl.co/"><img src="imgs/projects/matchgame.jpg" alt="Python Logo"></a>
+          <h1 class="text-center">Matching Game</h1>
+          <p class="text-center">I created a matching game using HTML, CSS, and JavaScript with a SpongeBob SquarePants theme. The game offers three modes of difficulty and tracks the number of flips as well as the best score. <a href="https://final-project-match-game-vrajatreplit.web-dev-summer-22.repl.co/">Click here</a> to play the game!</p>
+        </div>
+        <div class="skill col-lg-3 col-md-6 col-12">
+          <a href="https://UpcomingEkadashis.vrajatreplit.repl.co"><img src="imgs/projects/ekadashisc.jpg" alt="Ekadashi Web App"></a>
+          <h1 class="text-center">Ekadashi Reminder</h1>
+          <p class="text-center">This simple web app, intended for mobile use is incredibly useful for Hindus, for whom fasting is required twice a month, on the 11th day ("Ekadashi") of every 15 day lunar cycle (waning and waxing). Easy to navigate and pleasing to the eye, the Ekadashi Reminder web app is simple to manuever and saves Hindus the extra effort of finding a Hindu religous calendar every time they need to know when to plan for a fast. It also includes a private birthday database, with the same format.<a href="https://UpcomingEkadashis.vrajatreplit.repl.co">Click here </a>to visit this project.</p>
+        </div>
+        <div class="skill col-lg-3 col-md-6 col-12">
+          <img src="imgs/skills/HTML5logo.png" alt="Python Logo">
+          <h1 class="text-center">Expense Tracker</h1>
+          <p class="text-center">Using the tkinter GUI toolkit, I built a powerful expense tracker application. The app features a simple way to enter expense name, type, date, and amount on the main screen and saves by writing to a csv file. A user can also display all expenses directly in the application and make modifications as needed. The user has the option to navigate to the statistics screen which allows a quick and easy summary of expenses based on the filters the user chooses to place, such as type of expense and date range.</p>
+        </div>
+        <div class="skill col-lg-3 col-md-6 col-12">
+          <a href="https://github.com/Vrajmp1/T-shirt-Database"><img src="imgs/projects/tshirtdatabase.jpg" alt="Python Logo"></a>
+          <h1 class="text-center">T-shirt Database</h1>
+          <p class="text-center">Using advanced knowledge of linked lists, pointers, and dynamic memory allocation, I created a database in C for university organizations' tshirts that can perform the basic operations of adding to the inventory, deleting from inventory, and displaying the items stored. <a href="https://github.com/Vrajmp1/T-shirt-Database">Click here </a>to view the source code.</p>
         </div>
       </div>
     </div>
@@ -185,7 +216,7 @@
   </section>
 
   <!-- 
-		TODO: Paste Bootstrap Javascript script tag from:
+		Paste Bootstrap Javascript script tag from:
 		https://getbootstrap.com/docs/5.1/getting-started/introduction/
 	-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
