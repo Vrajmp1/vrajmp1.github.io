@@ -68,12 +68,12 @@ h1 {
   padding: 0px;
   border-radius: 50%;
   border: solid black 2px;
-  transition-duration: 2s;
+  transition-duration: .5s;
 }
 
 /*SIZZLE*/
 .hero-content img:hover{
-  transform: scale(1.2);
+  transform: scale(1.15);
   border: dashed black 2px;
 }
 /*End styling of hero section*/
@@ -196,7 +196,7 @@ i{
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  height: 40%;
+  height: 30%;
   width: 50%;
   border-radius: 2%;
   padding: 0;
@@ -227,5 +227,3 @@ i{
 }
 
 /*End of Styling of Contact Section*/
-
-
