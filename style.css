@@ -1,229 +1,240 @@
-/* You can add custom CSS and extend Boostrap styles in this file.  Remember, Bootstrap is just CSS at the end of the day! */
-body {
-  margin: 0px;
-}
-section {
-  position: relative;
-  padding: 20px;
-}
-
-section#skills-section, section#inspiration-section{
-  background: #d4d4d4;
-}
-
-#mission-target,
-#skills-target,
-#contact-target,
-#inspiration-target {
-  position: relative;
-  top: -100px;
-}
-
-p{
-  font-family: 'Federo', sans-serif;
-  font-size: 110%;
-}
-
-/*-----------------------Begin styling of hero section-----------------------*/
-
-/*SIZZLE*/
-h1 {
-  font-family: 'Belleza', sans-serif;
-  color: black;
+html, body {
+  height: 100vh;
+  width: 100%;
 }
 
 #hero-section {
-  width: 100vw;
-  height: 550px;
+  background: rgb(180, 188, 217);
+  min-height: 20vh;
+}
+
+h3 {
+  color: white;
+}
+
+.display-1 {
+  font-family: 'Playfair Display', serif;
+}
+
+input, select {
+  margin-bottom: 1rem;
+  width: 85%;
+}
+
+#content-section {
+  width: 100%;
+  background-color: #ff5900;
+}
+
+label {
+  display: block;
+  left: 50%;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+button {
+  position: relative;
+  margin: 0 auto;
+  left: 30%;
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
+
+#result {
   text-align: center;
-  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)), url("imgs/hero_img.jpg");
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  margin: auto;
+}
+
+#result-container label {
+  min-height: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #b1b0b5;
+  height: 10vh;
+}
+
+#logo {
+  background: transparent;
+  height: 6vh;
+  position: absolute;
+  top: 2vh;
+  left: 1%;
+}
+
+.navbar ul {
+  position: relative;
+  left: 10%;
+  background-color: #b1b0b5;
+  list-style: none;
+  margin-left: 2%;
+  padding: 1rem 0 0 0;
+  text-align: left;
+}
+
+.navbar li {
+  display: inline-block;
+  background-color: #b1b0b5;
+  padding: 1rem;
+  margin: 0 1.5rem;
+}
+
+.navbar a {
+  background-color: #b1b0b5;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+section {
+  margin: 0;
+}
+
+#hero {
+  position: relative;
+  text-align: center;
+  height: 80vh;
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url("https://png.pngtree.com/thumb_back/fw800/background/20231009/pngtree-d-render-of-an-online-marketing-website-on-a-laptop-in-image_13595569.png");
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.hero-content h1{
-  color: white;
-  font-family: 'Krona One', sans-serif;
-}
-
-.hero-content {
-  color: white;
-  font-family: 'Krona One', sans-serif;
+#hero-content {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.hero-content h1{
-  padding: 5px;
+#hero-content h1 {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  letter-spacing: 2px;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
 }
 
-.hero-content img{
-  width: 21%;
-  height: auto;
-  margin: 20px auto;
-  padding: 0px;
-  border-radius: 50%;
+#hero-content h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  position: relative;
+}
+
+.about h2 {
+  display: inline-block;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: 2.5rem;
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  letter-spacing: 3px;
+}
+
+.about h3 {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+}
+
+.about div img {
+  float: left;
+  position: relative;
+  height: clamp(6rem, 10vw, 15rem);
   border: solid black 2px;
-  transition-duration: .5s;
-}
-
-/*SIZZLE*/
-.hero-content img:hover{
-  transform: scale(1.15);
-  border: dashed black 2px;
-}
-/*End styling of hero section*/
-
-/*-----------------------Begin styling of navbar-----------------------*/
-i{
-  color: #ceccea;
-  font-size: 35px;
-}
-
-/*SIZZLE*/
-#icon-laptop{
+  box-sizing: border-box;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
   transition-duration: 2s;
 }
-#icon-laptop:hover{
-  transform: rotate(360deg);
+
+.about div img:hover {
+  transform: scale(1.15);
 }
 
-.nav-link, .navbar-brand{
-  color: #ceccea;
+.about div p {
+  display: inline;
+  font-size: 1.25rem;
 }
 
-.nav-link:hover, .navbar-brand:hover{
-  color: #c88d8d;
+.sign {
+  margin-top: 3rem;
+  height: 10vh;
+  color: white;
+  font-size: 1rem;
+  background-color: #413d4c;
 }
 
-.navbar-nav li{
-  margin-left: 15px;
-}
-
-#Home{
-  position: absolute;
-  left: 55px;
-  top: 20px;
-}
-/*End styling of navbar*/
-
-#inspiration-section,mission-section{
-  background: #fafafa;
-}
-/*-----------------------Begin Styling of Inspiration Section-----------------------*/
-
-/*SIZZLE made the prev and next icons black instead of white to stand out*/
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-
-.carousel-item {
-  width: 70vw;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%);
-}
-
-.carousel-item img {
-  object-fit: cover;
-  overflow: hidden;
-  height: 60vh;
-}
-
-
-.carousel-caption {
-  background: rgba(0,0,0,0.4);
-}
-
-/*-----------------------Begin Styling of Mission Section-----------------------*/
-#to_center_p, #to_center_img {
+.sign p {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
-/*SIZZLE*/
-#mission-section-img{
-  border: solid black .5px;
-  transition-duration: .5s;
-}
-#mission-section-img:hover{
-  border: solid black .5px;
-  transform: scale(.95);
-}
-/*End Styling of mission section*/
-
-/*-----------------------Begin Styling of Skills Section-----------------------*/
-
-#skills-section img{
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  height: auto;
-  width: 50%;
-  border-radius: 50%;
-  padding: 0;
-  border: solid black 3px;
-  margin-bottom: 10px;
+  margin: 2%;
 }
 
-#skills-section p{
-  position: relative;
-  bottom: 0px;
+/* Media Queries */
+@media (max-width: 1024px) {
+  header {
+    height: 8vh;
+  }
+  #logo {
+    height: 5vh;
+  }
+  .navbar li {
+    margin: 0 1rem;
+  }
+  #hero {
+    height: 40vh;
+  }
 }
 
-/*SIZZLE - change border with shadow upon hover*/
-#skills-section img:hover{
-  border: solid #8f4d8f 7px;
-  box-shadow: 10px 5px 5px rgba(0,0,0,.3);
-}
-#skills-section .skill{
-  padding: 20px;
-}
-
-/*End of Styling of Skills Section*/
-
-/*-----------------------Begin Styling of Projects Section-----------------------*/
-
-#projects-section img{
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 30%;
-  width: 50%;
-  border-radius: 2%;
-  padding: 0;
-  border: solid black 3px;
-  margin-bottom: 10px;
+@media (max-width: 768px) {
+  #hero-content h1 {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+  }
+  #hero-content h2 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+  }
+  .navbar li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .about div img {
+    height: clamp(5rem, 8vw, 10rem);
+  }
 }
 
-#projects-section p{
-  position: relative;
-  bottom: 0px;
+@media (max-width: 480px) {
+  #hero-content {
+    padding: 1rem;
+  }
+  #hero-content h1 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+  .navbar ul {
+    left: 0;
+    padding: 1rem;
+  }
 }
-
-/*SIZZLE - change border with shadow upon hover*/
-#projects-section img:hover{
-  border: solid #8f4d8f 7px;
-  box-shadow: 10px 5px 5px rgba(0,0,0,.3);
-}
-#projects-section .skill{
-  padding: 20px;
-}
-
-/*End of Styling of Projects Section*/
-
-/*-----------------------Begin Styling of Contact Section-----------------------*/
-
-#contact-section i{
-  font-size: 375%;
-}
-
-/*End of Styling of Contact Section*/
